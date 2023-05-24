@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Transport Layer</title>
+</head>
+<body>
+    <header><h1>Lapisan OSI<br><i>(Transport Layer)</i></h1></header>
+    <div class="content">
+    <table>
+        <tr><td>Mata Kuliah <td>:</td><td>Jaringan Komputer</td></tr>
+        <tr><td>Kelas       <td>:</td><td>PTI 3B</td></tr>
+        <tr><td>Dosen Pengampu<td>:</td><td>Aceng Ahmad Rodian Susila, M.Pd.</td></tr>
+        </table><hr>
+    <main>
+        <section class="pembahasan">
+            <h3>OSI Layer</h3>
+            <p>Lapisan atau layer pada sebuah koneksi atau jaringan komputer engacu pada apa yang kita kenal dengan nama OSI layer. OSI layer merupakan sebuah sistem logic yang terdiri dari 7 buah lapisan, yang memiliki peran penting dalam proses transmisi data dan dalam sebuah koneksi jaringan. Setiap koneksi ataupun transmisi data harus melewati ketujuh lapisan tersebut agar dapat diteransmisikan dengan baik dan juga sempurna. (baca juga: model OSI layer dan fungsinya).</p>
+            <p>Salah satu layer atau lapisan dari OSI layer yang cukup penting keberadaannya adalah transport layer, yang merupakan layer atau lapisan ke empat dalam OSI Layer. Untuk lebih jelasnya mengenai transport layer, berikut ini adalah penjelasan mengenai transport layer, terutama fungsi – fungsi dan protocol yang digunakan dalam transport layer.</p><hr>
+            <h3>Pengertian Transport Layer</h3>
+            <p>Lapisan transpor atau transport layer merupakan lapisan keempat dari model referensi jaringan OSI. Lapisan transpor bertanggung jawab kepada menyediakan layanan-layanan yang dapat diandalkan kepada protokol-protokol yang terletak di atasnya.</p>
+            <p>Transport layer adalah layer yang dapat menggabungkan beberapa koneksi transport ke jaringan koneksi sama. Transport layer ini juga bertanggung jawab untuk mengirimkan data ke proses aplikasi yang sesuai dengan komputer host.</p>
+            <p>Proses penyampaian data yang dilakukan oleh transport layer ini melibatkan multiplexing statistik data dari beberapa proses aplikasi yang berbeda, yaitu dengan cara membentuk paket data, dan nomor port tujuan dalam header setiap paket data yang berada pada Transport Layer. Nomor port merupakan soket jaringan, yaitu alamat identifikasi proses-proses komunikasi. Dalam model OSI, fungsi ini didukung oleh Session Layer.<hr>
+            <h3>Fungsi Transport layer pada Jaringan Komputer</h3>
+            <p>Terdapat beberapa fungsi dari Transport Layer pada jaringan komputer, diantaranya yaitu : <br>
+                <ol>
+                    <li><b>Menerima data dari Session layer</b><br>Session layer adalah layer atau lapisan yang berjalan atau bekerja sebelum masuk ke dalam transport layer. Setelah data melewati session layer, maka tugas berikutnya dari transport layer adalah menerima segala bentuk data yang sudah melewati session layer, untuk kemudian diproses lebih lanjut di dalam transport layer. </li><br>
+                    <li><b>Memecah data menjadi bagian – bagian yang lebih kecil</b><br>
+                        Sebuah data terkadang terlalu besar untuk diteruskan di dalam sebuah sistem atau siklus jaringan komputer. Karena itu, untuk dapat meneruskan sebuah data dengan tepat dan baik, dibutuhkan sebuah proses pemecahan data, yang berguna untuk mempermudah proses transmisi data dan mempermudah data agar bisa melewati layer atau lapisan selanjutnya dengan lebih baik, optimal dan efisien.</li><br>
+                    <li><b>Meneruskan data Ke Network layer</b><br>
+                        Setelah transport layer menerima data dari session layer, maka kemudian transport layer akan memeceh data – data tersebut ke dalam bentuk paket data yang lebih kecil. Setelah data diubah menjadi paket data yang lebih kecil, maka paket data tersebut kemudian dikirimkan atau diteruskan ke dalam layer atau lapisan berikutnya, yaitu network layer.<br>Pada saat paket data masuk ek dalam network layer, maka paket data tersebut akan diberi header, sehingga tidak “tercecer” dan dapat disatukan kembali serta dideteksi kesalahan dan kerusakan pada paket data tersebut.</li><br>
+                    <li><b>Mengirim Segmen dari satu host ke host lain</b><br>
+                        Fungsi dari transport layer selanjutnya adalah mengirim data yang sudah dibagi menjadi beberapa bagian segmen dari satu host ke host lainnya. </li><br>
+                    <li><b>Memastikan realibilitas data</b><br>
+                        Transport layer memiliki fungsi sebagai pengetes realibilitas data. Dengan demikian, maka setiap data yang sudah melewati transport layer pasti memiliki realibilitas yang baik, sehingga dapat diteruskan ke lapisan berikutnya, dan prose koneksi akan berjalan dengan baik.</li><br>
+                    <li><b>Memastikan Paket data diteruskan ke layer selanjutnya</b><br>
+                        Fungsi selanjutnya adalah dengan mengirim data ke layer selanjutnya sehingga layer ini berperan untuk memastikan bahwa semua data yang melewati layer ini dapat tiba disisi lain jaringan dengan benar dan juga tidak salah arah.</li><br>
+                    <li><b>Mengatur lalu lintas jaringan</b><br>
+                        Transport layer juga memiliki fungsi lainnya yang tentu saja tidak kalah penting. Transport layer dapat membantu mengatur lalu lintas pada sebuah jaringan, terutama pad jaringan yang sangat sibuk dan juga padat. Hal ini dilakukan oleh transport layer untuk menghindarkan sebuah jaringan dari kondisi kemacetan jaringan. Kemacetan jaringan tentu saja akan sangat mengganggu kinerja dari sebuah jaringan, dan dapat memperlambat proses transmisi data yang ada.</li>
+                </ol><hr>     
+            </p>
+            <section class="pembahasan">
+                <h3>Peran Penting dari Transport Layer</h3>
+                <p>Selain memiliki 4 fungsi dasar yang sudah disebutkan diatas, transport layer sendiri memiliki beberapa peran penting yang didefinisikan secara teknis. Ada beberapa peran penting dari transport layer secara teknis, yaitu : <br>
+                <ol>
+                    <li><b><i>Service point addressing</i></b><br>Service point addressing mengacu pada kemampuan dari transport layer dalam menentukan dan menangani pengiriman data yang spesifik untuk aplikasi yang berlainan. Aplikasi yang berlainan tentu saja harus memperoleh jenis message yang berlainan pula, sehingga harus memiliki alamat atau address tersendiri. Alamat atau address tersendiri inilah yang dikenal denan nama service point addressing, yang merupakan peran dan tanggung jawab dari transport layer.</li><br>
+                    <li><b><i>Segmentation dan Reassembly</i></b><br>
+                        Layer transport juga memiliki peran penting dalam melakukan reassembly dan egmentation. Hal ini berarti transport layer dapat memecah belah data menjadi segment atau paket data tertentu, dan begitu pula sebaliknya, dimana transport layer memiliki peran yang juga penting untuk melakukan proses reassembly, atau penyatuan kembali segmen – segmen tersebut menjadi satu kesatuan data yang utuh.</li><br>
+                    <li><b><i>Connection Control</i></b><br>
+                        Transport layer juga memiliki peran penting lainnya sebagai conecctionless ataupun connection oriented, dan dapat mengontrol jenis connection yang akan digunakan dalam proses transmisi data.</li><br>
+                    <li><b><i>Flow Control</i></b><br>
+                        Transport layer juga memiliki peran dan tanggung jawab dalam melakukan proses flow control, atau pengontrol aliran. Jadi, transport layer dapat mengatur bagaimana alur yang terjadi dalam sebuah koneksi, terutama dalam hal koneksi yang bertipe end – to end connection.</li><br>
+                    <li><b><i>Error Control</i></b><br>
+                        Transport layer juga memiliki fungsi dan tugas teknis dalam melakukan pnengontrolan terhadap error atau error control. Sama seperti flow control, error control yang dilakukan oleh transport layer dilakukan pada koneksi end – to end connection.</li>
+                </ol><hr>
+            <h3>Protokol Pada Transport Layer</h3>
+            <p>Sesuai dengan namanyam yaitu transport layer, terdapat protocol yang mengatur kinerja dari lapisan atau layer protocol ini. Protocol yang mengatur serta membuat supaya transport layer dapat bekerja secara optimal adalah TCP atau Transmission Control Protocol. Protocol ini berguna untuk mengatur proses transmisi yang terjadi pada sebuah koneksi atau jaringan, dalam hal ini membantu transport layer dalam mengirimkan data – data terutama dalam koneksi end – to end connection.</p>
+        </section>
+    <p>Berikut Penjelasan Video Terkait Lapisan Transport Layer:</p><iframe width="560" height="315" src="https://www.youtube.com/embed/k2gVMGNrAV8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p>Berikut Penjelasan Video Terkait Lapisan Transport Layer:</p><iframe width="560" height="315" src="https://www.youtube.com/embed/2NepreY91OQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h3>Daftar Pustaka</h3>
+        <ul>
+            <li><p>Ananda. Pengertian LAN: Tujuan, Fungsi, Komponen, dan Cara Membangun. Tersedia: <a href="https://www.gramedia.com/literasi/pengertian-lan/">https://www.gramedia.com/literasi/pengertian-lan/</a>.</p></li>
+            <li><p>Galerinfo.Peran Transport Layer Pada Jaringan Komputer Lengkap. Tersedia: <a href="https://www.jagoanhosting.com/blog/lan-adalah/">https://www.jagoanhosting.com/blog/lan-adalah/</a>.</p></li>
+            <li><p>Creator. Apa Itu Remote Computer? Beserta kelebihan dan kekurangannya.. Tersedia: <a href="https://www.sobatambisius.com/2021/10/apa-itu-remote-computer-beserta.html">https://www.sobatambisius.com/2021/10/apa-itu-remote-computer-beserta.html</a>.</p></li>
+            <li><p>Sutiono.Transport Layer Jaringan Komputer. Tersedia: <a href="https://dosenit.com/jaringan-komputer/teknologi-jaringan/transport-layer-jaringan-komputer">https://dosenit.com/jaringan-komputer/teknologi-jaringan/transport-layer-jaringan-komputer</a>.</p></li>
+        </ul><hr>
+        <table>
+            <tr><td>Kelompok 4    :</td></tr>
+            <tr><td>Kamela Fauziah</td><td>20833007</td></tr>
+            <tr><td>Ade Siska Aprilia</td><td>20832016</td></tr>
+            <tr><td>Arifan Zulfa Ramadhan</td><td>20834005</td></tr>
+            <tr><td>Sayyid Ahmad Sidiq</td><td>20834004</td></tr>
+            <tr><td>Muhamad Akhfa Mubarok</td><td>20834002</td></tr>
+        </table>
+    </main><hr>
+        <footer>
+            <p class="copyright text-center">&copy; 2023 Copyright. <a href="https://github.com/kamela23">Kelompok 4_Kamela-Ade Siska-Arifan-Sayyid-Akhfa</a>.</p>
+        </footer>
+    </div>
+</body>
+</html>
